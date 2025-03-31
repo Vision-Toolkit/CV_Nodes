@@ -1,0 +1,716 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NodeVision.SDK</name>
+    </assembly>
+    <members>
+        <member name="T:NodeVision.SDK.Docking.DockTypes">
+            <summary>
+            停靠模式
+            </summary>
+        </member>
+        <member name="F:NodeVision.SDK.Docking.DockTypes.Document">
+            <summary>
+            作为标签栏
+            </summary>
+        </member>
+        <member name="F:NodeVision.SDK.Docking.DockTypes.RightTool">
+            <summary>
+            作为左侧工具栏
+            </summary>
+        </member>
+        <member name="F:NodeVision.SDK.Docking.DockTypes.LeftTool">
+            <summary>
+            作为右侧工具栏
+            </summary>
+        </member>
+        <member name="T:NodeVision.SDK.Docking.DockViewModelBase">
+            <summary>
+            停靠面板模型
+            </summary>
+        </member>
+        <member name="P:NodeVision.SDK.Docking.DockViewModelBase.DockItemHost">
+            <summary>
+            停靠配置
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.Docking.DockViewModelBase.OnRemoved">
+            <summary>
+            当面板被关闭时
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.Docking.DockViewModelBase.MakeActive">
+            <summary>
+            激活面板
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.Docking.DockViewModelBase.Select">
+            <summary>
+            选中面板
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.Docking.DockViewModelBase.op_Implicit(NodeVision.SDK.Docking.DockViewModelBase)~NP.Ava.UniDockService.DockItemViewModelBase">
+            <summary>
+            类型转换
+            </summary>
+            <param name="vm"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NodeVision.SDK.Docking.IWorkspace">
+            <summary>
+            工作区接口
+            </summary>
+        </member>
+        <member name="T:NodeVision.SDK.GraphModel.ConnectionViewModel">
+            <summary>
+            连线
+            </summary>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.ConnectionViewModel.source">
+            <summary>
+            源
+            </summary>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.ConnectionViewModel.target">
+            <summary>
+            目标
+            </summary>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.ConnectionViewModel.isSelected">
+            <summary>
+            是否被选中
+            </summary>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.ConnectionViewModel.Graph">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.ConnectionViewModel.Disconnect">
+            <summary>
+            移除连线
+            </summary>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.ConnectionViewModel.Source">
+            <inheritdoc cref="F:NodeVision.SDK.GraphModel.ConnectionViewModel.source"/>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.ConnectionViewModel.Target">
+            <inheritdoc cref="F:NodeVision.SDK.GraphModel.ConnectionViewModel.target"/>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.ConnectionViewModel.IsSelected">
+            <inheritdoc cref="F:NodeVision.SDK.GraphModel.ConnectionViewModel.isSelected"/>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.ConnectionViewModel.disconnectCommand">
+            <summary>The backing field for <see cref="P:NodeVision.SDK.GraphModel.ConnectionViewModel.DisconnectCommand"/>.</summary>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.ConnectionViewModel.DisconnectCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:NodeVision.SDK.GraphModel.ConnectionViewModel.Disconnect"/>.</summary>
+        </member>
+        <member name="T:NodeVision.SDK.GraphModel.Connectors.ConnectorBuilder">
+            <summary>
+            连接器构造器
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Connectors.ConnectorBuilder.CreateInput``1(NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase,System.String)">
+            <summary>
+            创造一个输入端口
+            默认未连接的输入端口可编辑,已连接则不可编辑，取消连接即可恢复, primary input不可编辑
+            </summary>
+            <param name="nodeViewModel">拥有该端口的节点</param>
+            <param name="title">端口名称</param>
+            <typeparam name="T">端口数据类型</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Connectors.ConnectorBuilder.CreateOutPut``1(NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase,System.String)">
+            <summary>
+            创造一个输出端口
+            默认输出端口不可编辑，如果可编辑，即使已经连接也可以编辑
+            </summary>
+            <param name="nodeViewModel">拥有该端口的节点</param>
+            <param name="title">端口名称</param>
+            <typeparam name="T">端口数据类型</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Connectors.ConnectorBuilder.SetDefaultValue``1(NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel{``0},``0)">
+            <summary>
+            设置默认值，不会触发ValueChanged事件
+            </summary>
+            <param name="self"></param>
+            <param name="value"></param>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Connectors.ConnectorBuilder.MarkAsPrimary(NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel)">
+            <summary>
+            将端口标记为 Primary 
+            Primary 不可隐藏，Primary input不可编辑,
+            </summary>
+            <param name="connectorViewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Connectors.ConnectorBuilder.EnableEdit(NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel)">
+            <summary>
+            启用端口编辑功能
+            </summary>
+            <param name="connectorViewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel._hide">
+            <summary>
+            是否在节点上隐藏，仅对次要端口生效，在已连接的端口上不能更改值
+            </summary>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel._readOnly">
+            <summary>
+            可通过属性面板编辑？ 仅对输出有效，输入默认未连接的都可编辑
+            </summary>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel.IsPrimary">
+            <inheritdoc cref="F:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel._isPrimary"/>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel.Hide">
+            <inheritdoc cref="F:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel._hide"/>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel.ReadOnly">
+            <inheritdoc cref="F:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel._readOnly"/>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel.OnIsPrimaryChanged(System.Boolean)">
+            <summary>
+            Primary port cannot be hide.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel.OnHideChanged(System.Boolean)">
+            <summary>Executes the logic for when <see cref="P:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel.Hide"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel.Hide"/> is changed.</remarks>
+        </member>
+        <member name="T:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModel`1">
+            <summary>
+            泛型端口
+            </summary>
+            <typeparam name="T">端口类型</typeparam>
+        </member>
+        <member name="T:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModelBase">
+            <inheritdoc/>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModelBase.Anchor">
+            <inheritdoc cref="F:NodeVision.SDK.GraphModel.Connectors.ConnectorViewModelBase._anchor"/>
+        </member>
+        <member name="T:NodeVision.SDK.GraphModel.Connectors.PortType">
+            <summary>
+            端口种类
+            </summary>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.Connectors.PortType.INPUT">
+            <summary>
+            输入
+            </summary>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.Connectors.PortType.OUTPUT">
+            <summary>
+            输出
+            </summary>
+        </member>
+        <member name="T:NodeVision.SDK.GraphModel.Indexing.INodeIndexProvider">
+            <summary>
+            节点索引提供者
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Indexing.INodeIndexProvider.Build(NodeVision.SDK.GraphModel.Indexing.VirtualFolder)">
+            <summary>
+            构建索引
+            </summary>
+            <param name="Root">节点根文件夹</param>
+            <returns></returns>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.Indexing.ITreeItem.IsFolder">
+            <summary>是否为文件夹</summary>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.Indexing.ITreeItem.Name">
+            <summary>名称</summary>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.Indexing.ITreeItem.Childs">
+            <summary>文件列表</summary>
+        </member>
+        <member name="T:NodeVision.SDK.GraphModel.Indexing.NodeTypeInfo">
+            <summary>
+            节点类型信息
+            </summary>
+            <param name="Name"></param>
+            <param name="id"></param>
+            <param name="Type"></param>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Indexing.NodeTypeInfo.#ctor(System.String,System.String,System.Type)">
+            <summary>
+            节点类型信息
+            </summary>
+            <param name="Name"></param>
+            <param name="id"></param>
+            <param name="Type"></param>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.Indexing.NodeTypeInfo.Name">
+            <summary></summary>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.Indexing.NodeTypeInfo.id">
+            <summary></summary>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.Indexing.NodeTypeInfo.Type">
+            <summary></summary>
+        </member>
+        <member name="T:NodeVision.SDK.GraphModel.Indexing.TreeItemExtensions">
+            <summary>
+            节点索引构建扩展方法
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Indexing.TreeItemExtensions.CreateFolder(NodeVision.SDK.GraphModel.Indexing.VirtualFolder,System.String)">
+            <summary>
+            创建文件夹
+            </summary>
+            <param name="parent"></param>
+            <param name="name">文件夹名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Indexing.TreeItemExtensions.CreateFile``1(NodeVision.SDK.GraphModel.Indexing.VirtualFolder,System.String)">
+            <summary>
+            创建节点信息文件
+            </summary>
+            <param name="parent"></param>
+            <param name="name">节点名称</param>
+            <typeparam name="T">节点的类型</typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase">
+            <summary>
+            节点基类
+            </summary>
+            <inheritdoc/>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase._message">
+            <summary>
+            提示消息
+            </summary>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase._index">
+            <summary>
+            节点执行顺序？
+            </summary>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase._executionTime">
+            <summary>
+            执行耗时
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase.SaveConfig">
+            <summary>
+            保存配置
+            </summary>
+            <returns>配置数据</returns>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase.LoadConfig(System.Byte[])">
+            <summary>
+            加载配置
+            </summary>
+            <param name="c">配置数据</param>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase.Dispose">
+            <summary>
+            当节点从编辑器中移除
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase.OnExecute">
+            <summary>
+            节点执行逻辑
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase.CanExecute">
+            <summary>
+            节点当前是否可以执行。
+            如果不可执行，需要设置Message，并且在可执行时清空Message
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase.OnInit">
+            <summary>
+            节点初始化逻辑
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase.OnReset">
+            <summary>
+            节点重置逻辑，用于清空节点状态、数据等
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase.OnDoubleClick">
+            <summary>
+            当节点被双击时触发
+            </summary>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase.Location">
+            <inheritdoc cref="F:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase._location"/>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase.Message">
+            <inheritdoc cref="F:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase._message"/>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase.Index">
+            <inheritdoc cref="F:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase._index"/>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase.ExecutionTime">
+            <inheritdoc cref="F:NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase._executionTime"/>
+        </member>
+        <member name="T:NodeVision.SDK.GraphModel.PendingConnectionViewModel">
+            <summary>
+            临时连线
+            </summary>
+            <inheritdoc/>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.PendingConnectionViewModel._source">
+            <summary>
+            源
+            </summary>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.PendingConnectionViewModel._target">
+            <summary>
+            目标
+            </summary>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.PendingConnectionViewModel._isVisible">
+            <summary>
+            是否可见
+            </summary>
+        </member>
+        <member name="F:NodeVision.SDK.GraphModel.PendingConnectionViewModel._targetLocation">
+            <summary>
+            目标位置
+            </summary>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.PendingConnectionViewModel.Source">
+            <inheritdoc cref="F:NodeVision.SDK.GraphModel.PendingConnectionViewModel._source"/>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.PendingConnectionViewModel.Target">
+            <inheritdoc cref="F:NodeVision.SDK.GraphModel.PendingConnectionViewModel._target"/>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.PendingConnectionViewModel.IsVisible">
+            <inheritdoc cref="F:NodeVision.SDK.GraphModel.PendingConnectionViewModel._isVisible"/>
+        </member>
+        <member name="P:NodeVision.SDK.GraphModel.PendingConnectionViewModel.TargetLocation">
+            <inheritdoc cref="F:NodeVision.SDK.GraphModel.PendingConnectionViewModel._targetLocation"/>
+        </member>
+        <member name="T:NodeVision.SDK.IHostedExtension">
+            <summary>
+            插件接口
+            </summary>
+        </member>
+        <member name="P:NodeVision.SDK.IHostedExtension.PluginName">
+            <summary>
+            插件名称
+            </summary>
+        </member>
+        <member name="P:NodeVision.SDK.IHostedExtension.Version">
+            <summary>
+            插件版本
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.IHostedExtension.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            插件初始化入口
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:NodeVision.SDK.Messaging.NodeDoubleClickMessage">
+            <summary>
+            通知节点已被双击的消息
+            </summary>
+            <param name="value">被双击的节点</param>
+        </member>
+        <member name="M:NodeVision.SDK.Messaging.NodeDoubleClickMessage.#ctor(NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase)">
+            <summary>
+            通知节点已被双击的消息
+            </summary>
+            <param name="value">被双击的节点</param>
+        </member>
+        <member name="T:NodeVision.SDK.Messaging.SelectedNodeChangedMessage">
+            <summary>
+            通知选中的节点已被更改的消息
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.Messaging.SelectedNodeChangedMessage.#ctor(NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase)">
+            <summary>
+            
+            </summary>
+            <param name="value">被选中的节点</param>
+        </member>
+        <member name="M:NodeVision.SDK.Messaging.SelectedNodeChangedMessage.#ctor(NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase,NodeVision.SDK.GraphModel.Nodes.NodeViewModelBase)">
+            <summary>
+            
+            </summary>
+            <param name="oldValue">上一个被选中的节点</param>
+            <param name="newValue">当前被选中的节点</param>
+        </member>
+        <member name="T:NodeVision.SDK.Misc.AppHelper">
+            <summary>
+            Application 帮助类
+            </summary>
+        </member>
+        <member name="T:NodeVision.SDK.Misc.FileTool">
+            <summary>
+            文件工具
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.Misc.FileTool.OpenReadFileDialog(Avalonia.Platform.Storage.FilePickerFileType)">
+            <summary>
+            打开读取项目对话框
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.Misc.FileTool.OpenReadProjectDialog">
+            <summary>
+            打开读取项目对话框
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.Misc.FileTool.OpenSaveProjectDialog(System.String)">
+            <summary>
+            打开保存项目对话框
+            </summary>
+        </member>
+        <member name="T:NodeVision.SDK.Misc.IImagePreviewNode">
+            <summary>
+            图像预览节点
+            </summary>
+        </member>
+        <member name="P:NodeVision.SDK.Misc.IImagePreviewNode.Image">
+            <summary>
+            图像
+            </summary>
+        </member>
+        <member name="T:NodeVision.SDK.Misc.IPropertyEditingProvider">
+            <summary>
+            属性编辑提供者
+            </summary>
+        </member>
+        <member name="P:NodeVision.SDK.Misc.IPropertyEditingProvider.EditorMap">
+            <summary>
+            编辑器映射 Type1 -> data type  Type2 -> editor type
+            </summary>
+        </member>
+        <member name="T:NodeVision.SDK.Misc.MatExtensions">
+            <summary>
+               Mat 扩展方法
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.Misc.MatExtensions.IsValid(OpenCvSharp.Mat)">
+            <summary>
+               判断 Mat 是否有效
+            </summary>
+            <param name="mat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NodeVision.SDK.Misc.MatExtensions.ToBitmapParallel(OpenCvSharp.Mat,Avalonia.Media.Imaging.WriteableBitmap)">
+            <summary>
+                Converts Mat to WriteableBitmap.
+                This method is more efficient because new instance of WriteableBitmap is not allocated.
+                Original:
+                https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp.WpfExtensions/WriteableBitmapConverter.cs
+            </summary>
+            <param name="mat">Input Mat</param>
+            <param name="dst">Output WriteableBitmap</param>
+        </member>
+        <member name="M:NodeVision.SDK.Misc.MatExtensions.ToIImage(OpenCvSharp.Mat,Avalonia.Media.Imaging.WriteableBitmap)">
+            <summary>
+               Converts Mat to IImage.
+            </summary>
+            <param name="mat"></param>
+            <param name="dst"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NodeVision.SDK.Misc.MsgBoxService">
+            <summary>
+            消息框服务
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.Misc.MsgBoxService.Show(System.String,System.String)">
+            <summary>
+            显示简单消息框
+            </summary>
+            <param name="message">消息</param>
+            <param name="title">标题</param>
+            <returns></returns>
+        </member>
+        <member name="M:NodeVision.SDK.Misc.MsgBoxService.ShowError(System.String,System.String)">
+            <summary>
+            显示错误消息框
+            </summary>
+            <param name="message">消息</param>
+            <param name="title">标题</param>
+            <returns></returns>
+        </member>
+        <member name="T:NodeVision.SDK.Misc.NodeExecutingService">
+            <summary>
+            节点执行相关状态
+            </summary>
+            <inheritdoc/>
+        </member>
+        <member name="F:NodeVision.SDK.Misc.NodeExecutingService._isInPreviewModel">
+            <summary>
+            是否在预览(编辑)模式
+            </summary>
+        </member>
+        <member name="F:NodeVision.SDK.Misc.NodeExecutingService._isRunning">
+            <summary>
+            是否正在运行
+            </summary>
+        </member>
+        <member name="P:NodeVision.SDK.Misc.NodeExecutingService.IsInPreviewModel">
+            <inheritdoc cref="F:NodeVision.SDK.Misc.NodeExecutingService._isInPreviewModel"/>
+        </member>
+        <member name="P:NodeVision.SDK.Misc.NodeExecutingService.IsRunning">
+            <inheritdoc cref="F:NodeVision.SDK.Misc.NodeExecutingService._isRunning"/>
+        </member>
+        <member name="M:NodeVision.SDK.Misc.INodifyObservableCollection`1.WhenAdded(System.Action{`0})">
+            <summary>
+            Called when a new item is added
+            </summary>
+            <param name="added">The callback to execute when an item is added</param>
+            <returns>Returns self</returns>
+        </member>
+        <member name="M:NodeVision.SDK.Misc.INodifyObservableCollection`1.WhenRemoved(System.Action{`0})">
+            <summary>
+            Called when an existing item is removed
+            Note: It is not called when items are cleared if <see cref="M:NodeVision.SDK.Misc.INodifyObservableCollection`1.WhenCleared(System.Action{System.Collections.Generic.IList{`0}})"/> is used
+            </summary>
+            <param name="added">The callback to execute when an item is removed</param>
+            <returns>Returns self</returns>
+        </member>
+        <member name="M:NodeVision.SDK.Misc.INodifyObservableCollection`1.WhenCleared(System.Action{System.Collections.Generic.IList{`0}})">
+            <summary>
+            Called when the collection is cleared
+            NOTE: It does not call <see cref="M:NodeVision.SDK.Misc.INodifyObservableCollection`1.WhenRemoved(System.Action{`0})"/> on each item
+            </summary>
+            <param name="added">The callback to execute when the collection is cleared</param>
+            <returns>Returns self</returns>
+        </member>
+        <member name="T:NodeVision.SDK.Misc.ViewLocator">
+            <summary>
+            视图定位器
+            </summary>
+        </member>
+        <member name="M:NodeVision.SDK.Misc.ViewLocator.Build(System.Object)">
+            <summary>
+            构建视图
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NodeVision.SDK.Misc.ViewLocator.Match(System.Object)">
+            <summary>
+            数据是否匹配
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Source">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Source" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Target">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Target" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsSelected">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsSelected" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsPrimary">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsPrimary" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Hide">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Hide" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ReadOnly">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ReadOnly" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Anchor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Anchor" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Location">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Location" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Message">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Message" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Index">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Index" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ExecutionTime">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ExecutionTime" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TargetLocation">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TargetLocation" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsInPreviewModel">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsInPreviewModel" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRunning">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRunning" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Source">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Source" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Target">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Target" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsSelected">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsSelected" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsPrimary">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsPrimary" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Hide">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Hide" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ReadOnly">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ReadOnly" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Anchor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Anchor" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Location">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Location" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Message">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Message" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Index">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Index" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ExecutionTime">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ExecutionTime" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TargetLocation">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TargetLocation" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsInPreviewModel">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsInPreviewModel" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRunning">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRunning" generated properties.</summary>
+        </member>
+    </members>
+</doc>

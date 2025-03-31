@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\\u521B\u89C6\u7EAA\\NodeLib\\CV_Node\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Node\\CV_Node.csproj|e:\\\u521B\u89C6\u7EAA\\nodelib\\cv_node\\cv_node\\imagesource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Node\\CV_Node.csproj|solutionrelative:cv_node\\imagesource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Node\\CV_Node.csproj|e:\\\u521B\u89C6\u7EAA\\nodelib\\cv_node\\cv_node\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Node\\CV_Node.csproj|solutionrelative:cv_node\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Classes.cs",
+              "DocumentMoniker": "E:\\\u521B\u89C6\u7EAA\\NodeLib\\CV_Node\\CV_Node\\Classes.cs",
+              "RelativeDocumentMoniker": "CV_Node\\Classes.cs",
+              "ToolTip": "E:\\\u521B\u89C6\u7EAA\\NodeLib\\CV_Node\\CV_Node\\Classes.cs",
+              "RelativeToolTip": "CV_Node\\Classes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T09:51:31.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ImageSource.cs",
+              "DocumentMoniker": "E:\\\u521B\u89C6\u7EAA\\NodeLib\\CV_Node\\CV_Node\\ImageSource.cs",
+              "RelativeDocumentMoniker": "CV_Node\\ImageSource.cs",
+              "ToolTip": "E:\\\u521B\u89C6\u7EAA\\NodeLib\\CV_Node\\CV_Node\\ImageSource.cs",
+              "RelativeToolTip": "CV_Node\\ImageSource.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T08:10:20.138Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
