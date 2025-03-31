@@ -7,7 +7,7 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ZhangGaofeng\.nuget\packages\;D:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.13.2</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.13.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\ZhangGaofeng\.nuget\packages\" />
@@ -23,6 +23,5 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgAvalonia_BuildServices Condition=" '$(PkgAvalonia_BuildServices)' == '' ">C:\Users\ZhangGaofeng\.nuget\packages\avalonia.buildservices\0.0.29</PkgAvalonia_BuildServices>
     <PkgAvalonia Condition=" '$(PkgAvalonia)' == '' ">C:\Users\ZhangGaofeng\.nuget\packages\avalonia\11.2.3</PkgAvalonia>
-    <PkgdotnetCampus_PublishFolderCleaner Condition=" '$(PkgdotnetCampus_PublishFolderCleaner)' == '' ">C:\Users\ZhangGaofeng\.nuget\packages\dotnetcampus.publishfoldercleaner\3.17.2</PkgdotnetCampus_PublishFolderCleaner>
   </PropertyGroup>
 </Project>

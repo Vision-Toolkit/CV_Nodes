@@ -5,10 +5,6 @@ VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CV_Nodes", "CV_Nodes\CV_Nodes.csproj", "{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NodeVision.SDK", "..\..\NodeVision\sdk\NodeVision.SDK\NodeVision.SDK.csproj", "{A03C99C5-ECEA-4249-9D22-BED8E307D504}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "..\..\NodeVision\external\ClassLibrary1\ClassLibrary1.csproj", "{B6351FE6-BFED-49A9-939E-FFF93CADF21F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -19,14 +15,6 @@ Global
 		{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}.Debug|x64.Build.0 = Debug|Any CPU
 		{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}.Release|x64.ActiveCfg = Release|x64
 		{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}.Release|x64.Build.0 = Release|x64
-		{A03C99C5-ECEA-4249-9D22-BED8E307D504}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{A03C99C5-ECEA-4249-9D22-BED8E307D504}.Debug|x64.Build.0 = Debug|Any CPU
-		{A03C99C5-ECEA-4249-9D22-BED8E307D504}.Release|x64.ActiveCfg = Release|Any CPU
-		{A03C99C5-ECEA-4249-9D22-BED8E307D504}.Release|x64.Build.0 = Release|Any CPU
-		{B6351FE6-BFED-49A9-939E-FFF93CADF21F}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{B6351FE6-BFED-49A9-939E-FFF93CADF21F}.Debug|x64.Build.0 = Debug|Any CPU
-		{B6351FE6-BFED-49A9-939E-FFF93CADF21F}.Release|x64.ActiveCfg = Release|Any CPU
-		{B6351FE6-BFED-49A9-939E-FFF93CADF21F}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

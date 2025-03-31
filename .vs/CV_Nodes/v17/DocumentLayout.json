@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\\u521B\u89C6\u7EAA\\\u8F6F\u4EF6\u4ED3\u5E93\\NodeLib\\CV_Nodes\\",
+  "WorkspaceRootPath": "E:\\C#_proj\\CV_Nodes\\CV_Nodes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Nodes\\CV_Nodes.csproj|e:\\\u521B\u89C6\u7EAA\\\u8F6F\u4EF6\u4ED3\u5E93\\nodelib\\cv_nodes\\cv_nodes\\nodes\\imagesource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Nodes\\CV_Nodes.csproj|e:\\c#_proj\\cv_nodes\\cv_nodes\\cv_nodes\\cv_nodes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Nodes\\CV_Nodes.csproj|solutionrelative:cv_nodes\\cv_nodes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Nodes\\CV_Nodes.csproj|e:\\c#_proj\\cv_nodes\\cv_nodes\\cv_nodes\\nodes\\imagesource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Nodes\\CV_Nodes.csproj|solutionrelative:cv_nodes\\nodes\\imagesource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Nodes\\CV_Nodes.csproj|e:\\\u521B\u89C6\u7EAA\\\u8F6F\u4EF6\u4ED3\u5E93\\nodelib\\cv_nodes\\cv_nodes\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Nodes\\CV_Nodes.csproj|solutionrelative:cv_nodes\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Nodes\\CV_Nodes.csproj|e:\\c#_proj\\cv_nodes\\cv_nodes\\cv_nodes\\views\\imagesourceview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Nodes\\CV_Nodes.csproj|solutionrelative:cv_nodes\\views\\imagesourceview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Nodes\\CV_Nodes.csproj|e:\\\u521B\u89C6\u7EAA\\\u8F6F\u4EF6\u4ED3\u5E93\\nodelib\\cv_nodes\\cv_nodes\\cv_nodes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Nodes\\CV_Nodes.csproj|solutionrelative:cv_nodes\\cv_nodes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Nodes\\CV_Nodes.csproj|e:\\c#_proj\\cv_nodes\\cv_nodes\\cv_nodes\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{358AD7CD-531A-4A6E-8573-5D8FF2CC5724}|CV_Nodes\\CV_Nodes.csproj|solutionrelative:cv_nodes\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,39 +42,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "ImageSourceView.axaml",
+              "DocumentMoniker": "E:\\C#_proj\\CV_Nodes\\CV_Nodes\\CV_Nodes\\Views\\ImageSourceView.axaml",
+              "RelativeDocumentMoniker": "CV_Nodes\\Views\\ImageSourceView.axaml",
+              "ToolTip": "E:\\C#_proj\\CV_Nodes\\CV_Nodes\\CV_Nodes\\Views\\ImageSourceView.axaml",
+              "RelativeToolTip": "CV_Nodes\\Views\\ImageSourceView.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-31T15:34:51.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Classes.cs",
-              "DocumentMoniker": "E:\\\u521B\u89C6\u7EAA\\\u8F6F\u4EF6\u4ED3\u5E93\\NodeLib\\CV_Nodes\\CV_Nodes\\Classes.cs",
+              "DocumentMoniker": "E:\\C#_proj\\CV_Nodes\\CV_Nodes\\CV_Nodes\\Classes.cs",
               "RelativeDocumentMoniker": "CV_Nodes\\Classes.cs",
-              "ToolTip": "E:\\\u521B\u89C6\u7EAA\\\u8F6F\u4EF6\u4ED3\u5E93\\NodeLib\\CV_Nodes\\CV_Nodes\\Classes.cs",
+              "ToolTip": "E:\\C#_proj\\CV_Nodes\\CV_Nodes\\CV_Nodes\\Classes.cs",
               "RelativeToolTip": "CV_Nodes\\Classes.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAwAoAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T14:44:41.366Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CV_Nodes.csproj",
-              "DocumentMoniker": "E:\\\u521B\u89C6\u7EAA\\\u8F6F\u4EF6\u4ED3\u5E93\\NodeLib\\CV_Nodes\\CV_Nodes\\CV_Nodes.csproj",
+              "DocumentMoniker": "E:\\C#_proj\\CV_Nodes\\CV_Nodes\\CV_Nodes\\CV_Nodes.csproj",
               "RelativeDocumentMoniker": "CV_Nodes\\CV_Nodes.csproj",
-              "ToolTip": "E:\\\u521B\u89C6\u7EAA\\\u8F6F\u4EF6\u4ED3\u5E93\\NodeLib\\CV_Nodes\\CV_Nodes\\CV_Nodes.csproj",
+              "ToolTip": "E:\\C#_proj\\CV_Nodes\\CV_Nodes\\CV_Nodes\\CV_Nodes.csproj",
               "RelativeToolTip": "CV_Nodes\\CV_Nodes.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwwAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw8AAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-02-25T10:58:38.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ImageSource.cs",
-              "DocumentMoniker": "E:\\\u521B\u89C6\u7EAA\\\u8F6F\u4EF6\u4ED3\u5E93\\NodeLib\\CV_Nodes\\CV_Nodes\\Nodes\\ImageSource.cs",
+              "DocumentMoniker": "E:\\C#_proj\\CV_Nodes\\CV_Nodes\\CV_Nodes\\Nodes\\ImageSource.cs",
               "RelativeDocumentMoniker": "CV_Nodes\\Nodes\\ImageSource.cs",
-              "ToolTip": "E:\\\u521B\u89C6\u7EAA\\\u8F6F\u4EF6\u4ED3\u5E93\\NodeLib\\CV_Nodes\\CV_Nodes\\Nodes\\ImageSource.cs",
+              "ToolTip": "E:\\C#_proj\\CV_Nodes\\CV_Nodes\\CV_Nodes\\Nodes\\ImageSource.cs",
               "RelativeToolTip": "CV_Nodes\\Nodes\\ImageSource.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAwwAoAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T10:58:02.176Z",
               "EditorCaption": ""

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CV_Nodes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bc344ab9fcd5a6549d9344c8f25a12666c3a2dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06b078d8502b3b731d809cd2554634e5a19b002a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CV_Nodes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CV_Nodes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

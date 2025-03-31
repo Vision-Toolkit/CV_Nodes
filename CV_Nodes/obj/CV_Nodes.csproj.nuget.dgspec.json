@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\创视纪\\软件仓库\\NodeLib\\CV_Nodes\\CV_Nodes\\CV_Nodes.csproj": {}
+    "E:\\C#_proj\\CV_Nodes\\CV_Nodes\\CV_Nodes.csproj": {}
   },
   "projects": {
-    "E:\\创视纪\\软件仓库\\NodeLib\\CV_Nodes\\CV_Nodes\\CV_Nodes.csproj": {
+    "E:\\C#_proj\\CV_Nodes\\CV_Nodes\\CV_Nodes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\创视纪\\软件仓库\\NodeLib\\CV_Nodes\\CV_Nodes\\CV_Nodes.csproj",
+        "projectUniqueName": "E:\\C#_proj\\CV_Nodes\\CV_Nodes\\CV_Nodes.csproj",
         "projectName": "CV_Nodes",
-        "projectPath": "E:\\创视纪\\软件仓库\\NodeLib\\CV_Nodes\\CV_Nodes\\CV_Nodes.csproj",
+        "projectPath": "E:\\C#_proj\\CV_Nodes\\CV_Nodes\\CV_Nodes.csproj",
         "packagesPath": "C:\\Users\\ZhangGaofeng\\.nuget\\packages\\",
-        "outputPath": "E:\\创视纪\\软件仓库\\NodeLib\\CV_Nodes\\CV_Nodes\\obj\\",
+        "outputPath": "E:\\C#_proj\\CV_Nodes\\CV_Nodes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "E:\\创视纪\\软件仓库\\NodeVision\\sdk\\NodeVision.SDK\\NodeVision.SDK.csproj": {
-                "projectPath": "E:\\创视纪\\软件仓库\\NodeVision\\sdk\\NodeVision.SDK\\NodeVision.SDK.csproj"
+              "E:\\创视纪\\软件仓库\\NodeVision.SDK\\src\\NodeVision.SDK.csproj": {
+                "projectPath": "E:\\创视纪\\软件仓库\\NodeVision.SDK\\src\\NodeVision.SDK.csproj"
               }
             }
           }
@@ -83,14 +84,14 @@
         }
       }
     },
-    "E:\\创视纪\\软件仓库\\NodeVision\\sdk\\NodeVision.SDK\\NodeVision.SDK.csproj": {
-      "version": "1.0.0",
+    "E:\\创视纪\\软件仓库\\NodeVision.SDK\\src\\NodeVision.SDK.csproj": {
+      "version": "1.0.4",
       "restore": {
-        "projectUniqueName": "E:\\创视纪\\软件仓库\\NodeVision\\sdk\\NodeVision.SDK\\NodeVision.SDK.csproj",
+        "projectUniqueName": "E:\\创视纪\\软件仓库\\NodeVision.SDK\\src\\NodeVision.SDK.csproj",
         "projectName": "NodeVision.SDK",
-        "projectPath": "E:\\创视纪\\软件仓库\\NodeVision\\sdk\\NodeVision.SDK\\NodeVision.SDK.csproj",
+        "projectPath": "E:\\创视纪\\软件仓库\\NodeVision.SDK\\src\\NodeVision.SDK.csproj",
         "packagesPath": "C:\\Users\\ZhangGaofeng\\.nuget\\packages\\",
-        "outputPath": "E:\\创视纪\\软件仓库\\NodeVision\\sdk\\NodeVision.SDK\\obj\\",
+        "outputPath": "E:\\创视纪\\软件仓库\\NodeVision.SDK\\src\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -105,7 +106,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "E:\\创视纪\\NodeLib": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -124,7 +125,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -138,17 +139,13 @@
               "target": "Package",
               "version": "[11.2.3, )"
             },
-            "Avalonia.Diagnostics": {
-              "target": "Package",
-              "version": "[11.2.3, )"
-            },
             "Avalonia.Fonts.Inter": {
               "target": "Package",
               "version": "[11.2.3, )"
             },
-            "Avalonia.Themes.Fluent": {
+            "Avalonia.Xaml.Behaviors": {
               "target": "Package",
-              "version": "[11.2.3, )"
+              "version": "[11.2.0.8, )"
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
@@ -185,10 +182,6 @@
             "Semi.Avalonia": {
               "target": "Package",
               "version": "[11.2.1.4, )"
-            },
-            "dotnetCampus.PublishFolderCleaner": {
-              "target": "Package",
-              "version": "[3.17.2, )"
             }
           },
           "imports": [
@@ -207,7 +200,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
