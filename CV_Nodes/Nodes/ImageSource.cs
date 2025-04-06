@@ -4,9 +4,10 @@ using NodeVision.SDK.GraphModel.Connectors;
 using NodeVision.SDK.GraphModel.Nodes;
 using NodeVision.SDK.Misc;
 using OpenCvSharp;
+using SkiaSharp;
 
 namespace CV_Nodes.Nodes;
-public partial class ImageSource:NodeViewModelBase,IImagePreviewNode
+public partial class ImageSource:NodeViewModelBase,IDrawingLayer
 {
     ConnectorViewModel<Mat>  c;
     VideoCapture ?cap;
@@ -23,11 +24,13 @@ public partial class ImageSource:NodeViewModelBase,IImagePreviewNode
          cap= new VideoCapture(0);
     }
     [ObservableProperty]
-    IImage image;
+    SKImage image;
+    public Action? RequestUpdate{ get; set; } 
+
     public override void OnExecute()
     {
         cap.Read(c.Data);
-        image=c.Data.ToIImage();
+        image=MatExtensions.ToSKImage(c.Data);
     }
     //public override bool CanExecute() => a != null && b != null;
 }

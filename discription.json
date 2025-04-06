@@ -1,0 +1,9 @@
+{
+    "name": "CV_Nodes",
+    "version": "1.0.0",
+    "author": "张三，孙五",
+    "url": "https://github.com/Vision-Toolkit/CV_Nodes.git",
+    "license": "",
+    "description": "基于opencv的节点库,并添加了一些辅助节点",
+    "formate": "project"
+}
