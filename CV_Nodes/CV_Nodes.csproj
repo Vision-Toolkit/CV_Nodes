@@ -8,12 +8,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="discription.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="OpenCvSharp4" Version="4.10.0.20241108" />
     <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.10.0.20241108" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="E:\创视纪\软件仓库\NodeVision.SDK\src\NodeVision.SDK.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="discription.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
