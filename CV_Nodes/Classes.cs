@@ -21,7 +21,7 @@ namespace CV_Nodes
         {
             services.AddTransient<INodeIndexProvider, NodeIndex>();
             services.AddTransient<ImageSource>();
-
+            services.AddTransient<CreateROI>();
         }
     }
 
@@ -30,8 +30,8 @@ namespace CV_Nodes
         public VirtualFolder Build(VirtualFolder Root)
         {
             Root.CreateFolder("机器视觉")
-                .CreateFile<ImageSource>("图像源");
-
+                .CreateFile<ImageSource>("图像源")
+                .CreateFile<CreateROI>("创建ROI");
             return Root;
         }
     }

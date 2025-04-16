@@ -1,5 +1,4 @@
-﻿using Avalonia.Media;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using NodeVision.SDK.GraphModel.Connectors;
 using NodeVision.SDK.GraphModel.Nodes;
 using NodeVision.SDK.Misc;
@@ -7,7 +6,7 @@ using OpenCvSharp;
 using SkiaSharp;
 
 namespace CV_Nodes.Nodes;
-public partial class ImageSource:NodeViewModelBase,IDrawingLayer
+public partial class ImageSource:NodeViewModelBase
 {
     ConnectorViewModel<Mat>  c;
     VideoCapture ?cap;
